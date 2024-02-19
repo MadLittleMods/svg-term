@@ -39,8 +39,6 @@ export const SvgTerm: React.FunctionComponent<SvgTermProps> = props => {
     to: to(bound)
   });
 
-  console.log(`width=${data.width} height=${data.height} displayWidth=${data.displayWidth} displayHeight=${data.displayHeight}`);
-
   return (
     <Window
       decorations={props.decorations}
