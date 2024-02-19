@@ -11,8 +11,8 @@ export function loadCast(input: string, options: LoadOptions = {}): Cast {
   const { width, height, idle, fps } = options;
   return load(input, {
     // eric: via https://github.com/marionebl/svg-term-cli/issues/78
-    width: width ? width + 1 : undefined,
-    height: height ? height + 1 : undefined,
+    width: width ? width : undefined,
+    height: height ? height : undefined,
     idle: idle ? idle / 1000 : undefined,
     fps
   });
